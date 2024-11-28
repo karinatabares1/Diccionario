@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/filters.css">
+    <link rel="stylesheet" href="styles/dictionaries.css">
+    <title>Diccionario-Dictionary</title>
+</head>
+<body>
+    <header>
+        <h1>TRADUCTOR</h1>
+    </header>
+    <main>
+        <aside>
+            <form id="translator-form">
+                <fieldset>
+                    <label for="search-word">Buscar</label>
+                    <input type="text" id="search-word" placeholder="Escribe una palabra">
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona el Idioma</legend>
+                    <label>
+                        <input type="radio" name="language" value="es-en" checked>
+                        Español a Inglés
+                    </label>
+                    <label>
+                        <input type="radio" name="language" value="en-es">
+                        Inglés a Español
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="category">Categorías</label>
+                    <select id="category">
+                        <option value="all-Categories">Todas las Categorías</option>
+                        <option value="animals">Animales</option>
+                        <option value="fruits">Frutas</option>
+                        <option value="colors">Colores</option>
+                        <option value="physical_descriptions">Descripciones Físicas</option>
+                        <option value="skills">Habilidades</option>
+                        <option value="verbs">Verbos</option>
+                    </select>
+                </fieldset>
+                <button type="button" id="translate-button">Traducir</button>
+                <button type="button" id="sort-button">Ordenar Alfabéticamente</button>
+            </form>
+            <section id="translated-word" class="translated-word">
+                <h2>Resultado:</h2>
+                <h3 id="word"></h3>
+                <h3 id="example"></h3>
+            </section>
+            <form id="add-word-form">
+                <h2>Agregar Nueva Palabra</h2>
+                <fieldset>
+                    <label for="new-english-word">Palabra en Inglés</label>
+                    <input type="text" id="new-english-word" required>
+                </fieldset>
+                <fieldset>
+                    <label for="new-spanish-word">Traducción al Español</label>
+                    <input type="text" id="new-spanish-word" required>
+                </fieldset>
+                <fieldset>
+                    <label for="new-example">Ejemplo de Uso</label>
+                    <textarea id="new-example" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="new-category">Seleccionar Categoría</label>
+                    <select id="new-category" required>
+                        <option value="animals">Animales</option>
+                        <option value="fruits">Frutas</option>
+                        <option value="colors">Colores</option>
+                        <option value="physical_descriptions">Descripciones Físicas</option>
+                        <option value="skills">Habilidades</option>
+                        <option value="verbs">Verbos</option>
+                    </select>
+                </fieldset>
+                <button type="button" id="add-word-button">Agregar Palabra</button>
+                <div>
+                    <h2>Palabras Agregadas:</h2>
+                    <ul id="word-list"></ul>
+                  </div>
+                  
+            </form>
+        </aside>
+        <section id="section-dictionary" class="section-dictionary"></section>
+     
+    </main>
+        <footer>    
+            <p>Elaborado por: <strong>Mariana Ocampo y Karina Tabares</strong></p>  
+        </footer>
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/dictionary.js"></script>
+</body>
+</html>

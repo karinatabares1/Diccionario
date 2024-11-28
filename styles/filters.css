@@ -1,0 +1,59 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e5fc1;
+}
+
+.translated-word {
+    width: 100%;
+}
